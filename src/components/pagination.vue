@@ -1,8 +1,8 @@
 <template>
   <div class="pagination">
-      Total results: {{store.totalResults}}
-      <ul class="pagination-body">
-        <li class="pagination-item" :class="{'active': page == store.currentPagiantion}" v-for="page in pagesCount" @click="setOffset(page)">
+      <div>Total results: {{store.totalResults}}</div>
+      <ul class="pagination-body btn-group">
+        <li class="pagination-item btn" :class="{'active': page == store.currentPagiantion}" v-for="page in pagesCount" @click="setOffset(page)">
           {{page}}
         </li>
       </ul>

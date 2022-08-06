@@ -47,17 +47,7 @@ footer{
   position: absolute;
   cursor: pointer;
 }
-
-.pagination-body {
-  display: flex;
-  padding-left: 0
-}
-
-.pagination-item{
-  list-style: none;
-  margin-left: 5px;
-  cursor:pointer;
-}
-.pagination-item.active{
-  font-weight: bold;
+.pagination {
+  display: block;
+  max-width: 50vw;
 }
